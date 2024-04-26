@@ -1,4 +1,4 @@
-apply plugin: "com.android.application"
+    apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
 
 import com.android.build.OutputFile
@@ -87,6 +87,13 @@ def reactNativeArchitectures() {
     def value = project.getProperties().get("reactNativeArchitectures")
     return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
+
+project.ext.vectoricons = [
+    iconFontNames: [ 'Feather.ttf', 'AntDesign.ttf' ] // Specify font files
+]
+
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+
 
 android {
     ndkVersion rootProject.ext.ndkVersion
