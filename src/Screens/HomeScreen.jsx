@@ -2,8 +2,10 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {Button, Card, Icon} from '@rneui/base';
 import LinearGradient from 'react-native-linear-gradient';
+import {useNavigation} from '@react-navigation/native';
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
   return (
     <View
       style={{
@@ -28,7 +30,8 @@ const HomeScreen = () => {
             colors: ['#FF9800', '#F44336'],
             start: {x: 0, y: 0.5},
             end: {x: 1, y: 0.5},
-          }}>
+          }}
+          onPress={() => navigation.push('DragNDrop')}>
           Go to example
           <Icon
             name="arrow-right"
