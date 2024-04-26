@@ -2883,6 +2883,7 @@ __metadata:
     prettier: "npm:^2.4.1"
     react: "npm:18.2.0"
     react-native: "npm:0.71.8"
+    react-native-drax: "npm:^0.10.3"
     react-native-linear-gradient: "npm:^2.8.3"
     react-native-safe-area-context: "npm:^4.10.1"
     react-native-screens: "npm:^3.31.1"
@@ -6733,6 +6734,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.isequal@npm:^4.5.0":
+  version: 4.5.0
+  resolution: "lodash.isequal@npm:4.5.0"
+  checksum: 10c0/dfdb2356db19631a4b445d5f37868a095e2402292d59539a987f134a8778c62a2810c2452d11ae9e6dcac71fc9de40a6fedcb20e2952a15b431ad8b29e50e28f
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -8291,6 +8299,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-drax@npm:^0.10.3":
+  version: 0.10.3
+  resolution: "react-native-drax@npm:0.10.3"
+  dependencies:
+    lodash.isequal: "npm:^4.5.0"
+    lodash.throttle: "npm:^4.1.1"
+    typesafe-actions: "npm:^5.1.0"
+  peerDependencies:
+    react: "*"
+    react-native: ">=0.65.0"
+    react-native-gesture-handler: ">=1.8.0"
+  checksum: 10c0/4bef92d48d01d524c10e8c5c1be25bd976274c2ed878331a2d68c387d8b4b87291b4a5814ec7b11ca254d7b8300c3f4680ef002de8c1c5a260d99b2ad960cd89
+  languageName: node
+  linkType: hard
+
 "react-native-gradle-plugin@npm:^0.71.18":
   version: 0.71.19
   resolution: "react-native-gradle-plugin@npm:0.71.19"
@@ -9616,6 +9639,13 @@ __metadata:
     is-typed-array: "npm:^1.1.13"
     possible-typed-array-names: "npm:^1.0.0"
   checksum: 10c0/74253d7dc488eb28b6b2711cf31f5a9dcefc9c41b0681fd1c178ed0a1681b4468581a3626d39cd4df7aee3d3927ab62be06aa9ca74e5baf81827f61641445b77
+  languageName: node
+  linkType: hard
+
+"typesafe-actions@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "typesafe-actions@npm:5.1.0"
+  checksum: 10c0/64e745aed10abf829b8aad3b178492c5f3602455cb02b7d565aad5560c0ded01dc5db06b12055ebb85fc9fd448d54d3444599eca65b074b48d0c9fb796bbb6a2
   languageName: node
   linkType: hard
 
