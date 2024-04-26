@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 import React from 'react';
-import {Button, Card} from '@rneui/base';
+import {Button, Card, Icon} from '@rneui/base';
 import LinearGradient from 'react-native-linear-gradient';
 
 const HomeScreen = () => {
@@ -30,6 +30,13 @@ const HomeScreen = () => {
             end: {x: 1, y: 0.5},
           }}>
           Go to example
+          <Icon
+            name="arrow-right"
+            color={'white'}
+            type="feather"
+            size={16}
+            iconStyle={{marginLeft: 10}}
+          />
         </Button>
       </Card>
     </View>
