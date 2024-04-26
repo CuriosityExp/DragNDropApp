@@ -9,7 +9,7 @@ const HomeScreen = () => {
   return (
     <View
       style={{
-        backgroundColor: '#EEE',
+        backgroundColor: '#ADADAD',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
